@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>form</title>
+</head>
+
+<body bgcolor="lightblue">
+    <!-- iframe, input with date type -->
+    <p>Migrant is located in Abuja. Find us on the map
+        <iframe id="migrant" title="migrant-location" width="300" height="200" src="https://www.google.com/maps"></iframe>
+    </p>
+    <div>Our internship programs are all year round, pick your start and end dates:</div>
+    <label for="start">Start Date:</label>
+    <input type="date" id="start" name="startd" value="2020-09-01" min="2020-03-25" max="2050-03-25" />
+    <hr>
+    <form action="https://formspree.io/xbjzvqdr" method="POST">
+        <h4>State of Origin</h4>
+        <input name="state" value="AKS" type="radio" /> AKS <br>
+        <input name="state" value="CRS" type="radio" /> CRS <br>
+        <input name="state" value="PHC" type="radio" /> PHC <br>
+        <input name="state" value="DEL" type="radio" /> DEL 
+    
+        <h4>Items in your workspace</h4>
+        <input type="checkbox" name="workspace" value="desk" /> desk <br>
+        <input type="checkbox" name="workspace" value="PC" /> PC <br>
+        <input type="checkbox" name="workspace" value="Broadband" /> Broadband <br>
+        <input type="checkbox" name="workspace" value="HDD" /> HDD <br>
+
+        <h4>Courses Available</h4>
+        <select>
+            <option value="Python">Python</option>
+            <option value="JavaScript">JavaScrpt</option>
+            <option value="Java">Java</option>
+            <option value="C++">C++</option>
+        </select>
+        <input type="submit" value="submit" /> 
+    </form>
+    <hr>
+    <P>There exist technologies which can help you behave like the computer system. Take a look:</P>
+    <!-- dl, dt, dd -->
+    <div>
+        <dl>
+            <dt>Figma:</dt>
+            <dd>Lets you create and use sleek designs that make users happy to be on your website.</dd>
+            <dt>JavaScript:</dt>
+            <dd>Lets you make your frontend active and interesting to use.</dl>
+        </dd>
+    </div>
+    <hr>
+    <!-- blockquote, cite, figure, figcaption, kbd, mark, s, and abbr -->
+    <div>
+        <blockquote cite="https://www.avatto.com/computer-science/test/mcqs/web-technology/html/162/8.html">
+            <p>The web standard allows programmers on many different computer platforms to disperse format and display the information server.<s>What to do with it?</s> The code <code>pop()</code> takes out the last item from your list. If at any point you have a chnage of mind, press <mark><kbd>ctrl</kbd> + <kbd>z</kbd></mark> and your most recent action will be undone. These are all contained in <abbr title="HyperText Markup Language">HTML</abbr></p>
+            <figure>
+                <img src="https://res.cloudinary.com/nseabasi/image/upload/v1591567247/imagebuilding_p2smlp.jpg" />
+                <figcaption>This is how a Dashboard looks</figcaption>
+            </figure>
+            <footer>-Nseabasi, <cite>Copied from a website</cite></footer>. 
+        </blockquote>
+    </div>
+    <hr>
+    <div>Let's do some arithmetics</div>
+    <p>if <var>x</var> is 2, and <var>y</var> is 3, find xy. </p>
+    <hr>
+    <!-- details and summary -->
+    <details>
+        <summary>
+            You have about all the tools to build an active, responsive website with HTML. Practice daily.
+        </summary>
+    </details>
+    <footer>
+        <!-- address tags and samp tags -->
+        <address>
+            <a href="mailto:nseabasi@migrant-solutions.com">nseabasi@migrant-solutions.com</a>
+            <a href="tel:+2348061103239">+2348061103239</a>
+        </address>
+        <p><samp>Press <kbd>home</kbd> to go back to the top</samp></p>
+        <p>Press <kbd>prt sc</kbd></p>
+    </footer>
+</body>
+</html>
